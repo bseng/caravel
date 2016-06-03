@@ -4,7 +4,7 @@ MAINTAINER amancevice@cargometrics.com
 # Setup
 RUN echo as of 2016-05-10 && \
     apt-get update && \
-    apt-get install -y build-essential libssl-dev libffi-dev python-dev python-pip
+    apt-get install -y build-essential libssl-dev libffi-dev python-dev python-pip freetds-dev
 
 # Pandas
 RUN pip install pandas==0.18.0
