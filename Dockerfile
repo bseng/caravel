@@ -18,6 +18,9 @@ RUN apt-get build-dep -y psycopg2 && pip install psycopg2==2.6.1
 # Redshift
 RUN pip install sqlalchemy-redshift==0.5.0
 
+#mssql
+RUN pip install pymssql==2.1.2
+
 # Caravel
 RUN pip install caravel==0.9.0
 
