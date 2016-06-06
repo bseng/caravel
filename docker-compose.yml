@@ -1,8 +1,9 @@
 db:
-  image: postgres
+  image: mariadb
   environment:
-    - POSTGRES_USER=caravel
-    - POSTGRES_PASSWORD=caravel
+    - MYSQL_DATABASE=db
+    - MYSQL_USER=caravel
+    - MYSQL_PASSWORD=caravel
 caravel:
   image: bseng/caravel
   ports:
@@ -11,4 +12,4 @@ caravel:
     - db
   environment:
     - SECRET_KEY=MySUPERsecretKey
-    - SQLALCHEMY_DATABASE_URI=postgresql://caravel:caravel@db:5432/db
+    - SQLALCHEMY_DATABASE_URI=mysql://caravel:caravel@db:3306/db
