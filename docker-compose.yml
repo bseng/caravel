@@ -4,6 +4,7 @@ db:
     - MYSQL_DATABASE=db
     - MYSQL_USER=caravel
     - MYSQL_PASSWORD=caravel
+    - MYSQL_RANDOM_ROOT_PASSWORD=true
 caravel:
   image: bseng/caravel
   ports:
